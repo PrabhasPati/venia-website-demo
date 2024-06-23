@@ -1,0 +1,279 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.cart a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-color: #f8f8f8;
+    padding: 60px 0;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+.btn-outline {
+    background-color: transparent;
+    color: #0056b3;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 2px solid #0056b3;
+    margin-right: 10px;
+}
+/* Categories Section Styles */
+.categories {
+    padding: 40px 0;
+    background-color: #f8f8f8;
+}
+
+.categories-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.category {
+    flex: 1 1 calc(5% - 15px);
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+.category img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.category-info h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.category-info p {
+    margin: 5px 0 0;
+}
+
+/* Promotions Section Styles */
+.promotions {
+    padding: 40px 0;
+}
+
+.promotions-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.promotion {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    align-items: center;
+    gap: 20px;
+}
+
+.promotion.reverse {
+    flex-direction: row-reverse;
+}
+
+.promotion img {
+    width: 300px;
+    height: auto;
+}
+
+.promotion-info {
+    flex: 1;
+}
+
+.promotion-info h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.promotion-info p {
+    margin: 10px 0;
+}
+
+.promotion-info.dark {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.promotion-info.dark .btn-outline {
+    color: white;
+    border-color: white;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+    text-align: left;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-column {
+    flex: 1 1 calc(25% - 20px);
+}
+
+footer h3 {
+    margin-top: 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+footer .social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+footer .social-icons a {
+    display: inline-block;
+}
+
+footer .social-icons img {
+    width: 24px;
+    height: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        margin: 0;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+    }
+
+    .promotions-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .promotion {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .promotion img {
+        margin-bottom: 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        flex: 1 1 100%;
+    }
+}
+
+

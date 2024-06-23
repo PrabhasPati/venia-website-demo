@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Men's Outerwear</title>
+    <link rel="stylesheet" href="css/listing.css">
+</head>
+<body>
+    <header>
+        <div class="container-fluid header-container">
+            <div class="logo">VENIA</div>
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="listing.html">Women</a></li>
+                    <li><a href="listing.html">Men</a></li>
+                    <li><a href="listing.html">Electronics</a></li>
+                    <li><a href="listing.html">Jewellery</a></li>
+                </ul>
+            </nav>
+          
+            <div class="cart"><a href="#"><i class="fa badge fa-lg" value=5>&#xf290;</i></a></div>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="container-fluid banner-container">
+            <div class="banner-text">
+                <img src="images/men-out-wear.PNG" alt="Men's Outerwear">
+            </div>
+            <div class="banner-image">
+                <img src="images/listing-header.PNG" alt="Men's Outerwear">
+            </div>
+        </div>
+    </section>
+
+    <section class="main-content">
+        <div class="container content-container">
+            <aside class="filters">
+                <h3>Filters</h3>
+                <ul>
+                    <li><input type="checkbox" value="jewelery" class="filter-checkbox"> Jewellery</li>
+                    <li><input type="checkbox" value="electronics" class="filter-checkbox"> Electronics</li>
+                    <li><input type="checkbox" value="men's clothing" class="filter-checkbox"> Men's Clothing</li>
+                    <li><input type="checkbox" value="women's clothing" class="filter-checkbox"> Women's Clothing</li>
+                </ul>
+            </aside>
+            <div class="products">
+                <div class="products-header">
+                    <span id="resultsCount">38 Results</span>
+                    <select id="sortSelect">
+                        <option value="default">Sort by Price</option>
+                        <option value="lowToHigh">Low to High</option>
+                        <option value="highToLow">High to Low</option>
+                    </select>
+                    <input type="text" id="searchBar" hidden placeholder="Search for products...">
+                </div>
+                <div class="product-list">
+                    <main id="productContainer">
+                        <!-- Products will be displayed here -->
+                    </main>
+                </div>
+                <button id="loadMoreBtn">Load More</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-column">
+                <h3>Account</h3>
+                <ul>
+                    <li><a href="#">Sign in</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Order Status</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us!</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="social-icons">
+                    <a href="#"><img src="path_to_facebook_icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="path_to_twitter_icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="path_to_instagram_icon.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script/script.js"></script>
+</body>
+</html>
